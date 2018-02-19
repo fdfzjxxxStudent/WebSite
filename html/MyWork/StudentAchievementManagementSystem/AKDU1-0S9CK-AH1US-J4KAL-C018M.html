@@ -1,0 +1,36 @@
+<html>
+<head>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <title>学生成绩管理系统 SAMS</title>
+</head>
+<body>
+    <script>
+        function success() {
+            edition = prompt("请选择下载版本（Linux版本或Windows版本）：", "Windows");
+            if (edition == "Windows") {
+                window.opener = null;
+                window.open("SAMS_zh-cn.windows.exe");
+                alert("Windows10的SmartScreen插件可能阻止程序运行，请选择仍要运行，我们保证程序安全无毒！");
+                window.close();
+            }
+
+            else if (edition == "Linux") {
+                window.opener = null;
+                window.open("SAMS_zh-cn.linux");
+                window.close();
+            }
+
+            else {
+                alert("无效版本！");
+            }
+        }
+    </script>
+    <h1 id="title">
+        激活码正确，激活成功！
+        <form method="get" onclick="success()">
+            <button type="submit" id="button">点我下载</button>
+        </form>
+    </h1>
+</body>
+</html>
