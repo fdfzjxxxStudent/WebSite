@@ -1,35 +1,34 @@
 <html>
 <head>
     <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="StudentAchievementManagementSystem.ico" rel="icon" type="image/x-icon" />
     <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-    <title>å­¦ç”Ÿæˆç»©ç®¡ç†ç³»ç»Ÿ SAMS</title>
+    <title>Ñ§Éú³É¼¨¹ÜÀíÏµÍ³ SAMS</title>
 </head>
 <body>
     <script>
         function success() {
-            edition = prompt("è¯·é€‰æ‹©ä¸‹è½½ç‰ˆæœ¬ï¼ˆLinuxç‰ˆæœ¬æˆ–Windowsç‰ˆæœ¬ï¼‰ï¼š", "Windows");
+            edition = prompt("ÇëÑ¡ÔñÏÂÔØ°æ±¾£¨Linux°æ±¾»òWindows°æ±¾£©£º", "Windows");
             if (edition == "Windows") {
                 window.opener = null;
                 window.open("SAMS_zh-cn.windows.rar");
-                alert("Windows10çš„SmartScreenæ’ä»¶å¯èƒ½é˜»æ­¢ç¨‹åºè¿è¡Œï¼Œè¯·é€‰æ‹©ä»è¦è¿è¡Œï¼Œæˆ‘ä»¬ä¿è¯ç¨‹åºå®‰å…¨æ— æ¯’ï¼");
-                window.close();
+                alert("Windows10µÄSmartScreen²å¼ş¿ÉÄÜ×èÖ¹³ÌĞòÔËĞĞ£¬ÇëÑ¡ÔñÈÔÒªÔËĞĞ£¬ÎÒÃÇ±£Ö¤³ÌĞò°²È«ÎŞ¶¾£¡");
             }
 
             else if (edition == "Linux") {
                 window.opener = null;
                 window.open("SAMS_zh-cn.linux");
-                window.close();
             }
 
             else {
-                alert("æ— æ•ˆç‰ˆæœ¬ï¼");
+                alert("ÎŞĞ§°æ±¾£¡");
             }
         }
     </script>
     <h1 id="title">
-        æ¿€æ´»ç æ­£ç¡®ï¼Œæ¿€æ´»æˆåŠŸï¼
+        ¼¤»îÂëÕıÈ·£¬¼¤»î³É¹¦£¡
         <form method="get" onclick="success()">
-            <button type="submit" id="button">ç‚¹æˆ‘ä¸‹è½½</button>
+            <button type="submit" id="button">µãÎÒÏÂÔØ</button>
         </form>
     </h1>
 </body>

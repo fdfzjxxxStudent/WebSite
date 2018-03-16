@@ -1,21 +1,16 @@
-
-        body {
-            background-image: url(/img/Background.jpg);
-            background-size: cover;
-        }
-        #title {
-            text-align: center;
-            color: white;
-            font-size: 60px;
-            font-family: 华文琥珀;
-            line-height: 500px;
-        }
+#title {
+	font-family: 华文琥珀;
+        text-align: center;
+        color: white;
+        font-size: 60px;
+        line-height: 500px;
+}
         #button {
+            font-family: 楷体;
             text-align: center;
             background-color: dimgray;
             color: black;
             font-size: 40px;
-            font-family: 楷体;
             border-radius: 20px;
         }
  	#footer {
@@ -29,3 +24,7 @@
                 font-size: 12px;
                 letter-spacing: 1px;
             }
+	body {
+            background-image: url(/img/Background.jpg);
+            background-size: cover;
+        }
